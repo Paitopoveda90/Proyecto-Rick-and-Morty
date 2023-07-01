@@ -1,0 +1,11 @@
+.container {
+    display:flex;
+    /* justify-content:center;  */
+    /* overflow: hidden; */
+    max-width: 100%;
+    flex-wrap: wrap;
+       
+        
+}
+
+

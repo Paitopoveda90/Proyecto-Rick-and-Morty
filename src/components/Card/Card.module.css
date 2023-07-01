@@ -1,0 +1,166 @@
+/* el archivo css no se exporta, react lo exporta por */
+/* defecto, pero si se importa en al archivo jsx */
+
+.contenedor {    
+    background-color: rgb(120, 253, 12);
+    margin:auto;
+    margin-bottom: 20px;
+    width: 15%;
+    font-size: 9px;  
+    /* border-radius: 50px;  */
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    box-shadow: 5px 5px 20px black;
+    cursor: pointer;
+    &:hover {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGQPgkJYOwYu_p-HxfRsBmXztHDjqRoKDKDw&usqp=CAU");
+        background-repeat: no-repeat;
+        background-size:cover;
+        color: rgb(133, 165, 135);
+        .name {
+            background-color: rgba(7, 51, 6, 0.822);
+            border-radius: 10px
+        };
+        .elementos{
+            display: block;
+            font-size: 15px;
+            background-color: rgba(7, 51, 6, 0.822);
+            border-radius: 40px;
+        };
+
+
+        /* .boton {
+            display:block;
+            margin: 40px;
+            margin-bottom: 15px;
+            border-radius: 40px;
+            background-color: rgba(5, 92, 24, 0.514);
+            font-size: 20px;
+            font: 400;
+            padding: 15px;
+            text-align: center;
+            color: rgb(183, 233, 204);
+            border-style: solid;
+            border-width: medium;
+            border-color: rgba(2, 44, 9, 0.74);
+        } */
+
+
+        .boton {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(4, 126, 31);
+            border: none;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.164);
+            cursor: pointer;
+            transition-duration: .3s;
+            overflow: hidden;
+            position: relative;
+            margin-bottom: 10px;
+            margin-left: 10px;
+          }
+          
+          .svgIcon {
+            width: 12px;
+            transition-duration: .3s;
+          }
+          
+          .svgIcon path {
+            fill: white;
+          }
+          
+          .boton:hover {
+            width: 140px;
+            border-radius: 50px;
+            transition-duration: .3s;
+            background-color: rgb(5, 190, 5);
+            align-items: center;
+          }
+          
+          .boton:hover .svgIcon {
+            width: 50px;
+            transition-duration: .3s;
+            transform: translateY(60%);
+          }
+          
+          .boton::before {
+            position: absolute;
+            top: -20px;
+            content: "Delete";
+            color: rgb(166, 236, 178);
+            transition-duration: .3s;
+            font-size: 2.5px;
+            font-weight: 500;
+          }
+          
+          .boton:hover::before {
+            font-size: 13px;
+            opacity: 1;
+            transform: translateY(30px);
+            transition-duration: .3s;
+          }
+    };
+}
+
+.contenedor img {
+    
+    /* object-fit: contain; */
+    border-radius: 50%;
+    margin: 200;
+    width: 80%;
+    height: 67%;
+    box-shadow: 5px 5px 20px black;
+    margin-bottom: 5px;
+    margin-top: 7%;
+
+
+}
+
+.name {
+    font-size: 25px;
+    font-style:oblique;
+    font-weight:700;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+    
+}
+
+.boton {
+    /* width: 20px;
+    height: 20px; */
+    display: none;
+    /* margin: 40px;
+    margin-bottom: 15px;
+    border-radius: 40px;
+    background-color: rgba(5, 92, 24, 0.514);
+    font-size: 20px;
+    font: 400;
+    padding: 15px;
+    text-align: center;
+    color: rgb(2, 48, 21);
+    border-style: solid;
+    border-width: medium;
+    border-color: rgba(2, 44, 9, 0.74); */
+}
+
+.elementos {
+    display: none;
+    color: bisque;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        flex-direction:column-reverse;
+    }
+
+}
+
+
+

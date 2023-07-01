@@ -1,0 +1,85 @@
+.search {
+padding: 20px;
+/* background-color: rgba(7, 141, 108, 0.466); */
+margin-bottom: 50px;
+justify-content:center;
+display: flex;
+
+}
+
+
+/* .boton {
+    background-color: rgb(113, 223, 10);
+    color: rgb(6, 80, 18);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    width: 5%;
+   
+    cursor: pointer;  
+} */
+
+.boton {
+    --color: #052b21;
+    padding: 0.8em 1.7em;
+    background-color:rgb(29, 201, 29);
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .boton::before, .boton::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .boton::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .boton::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .boton:hover::before, .boton:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .boton:hover {
+    color: rgb(23, 189, 97);
+   }
+   
+   .boton:active {
+    filter: brightness(.8);
+   }
+
+.input{
+    padding: 1%;
+    margin-right: 15px;
+    border-radius: 30px;
+    border: none;
+    width: 30%;
+    
+
+}
