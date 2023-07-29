@@ -1,0 +1,24 @@
+.App {
+   /* text-align: center;
+   background-image: url("../src/components/imagen/textura_dedede_2.jpg");
+   background-size: cover;
+   height: 100vh;
+   justify-content:center; */
+   /* display: flex;
+   flex-direction: column; */
+
+   /* background-image: url("https://www.shadertoy.com/media/shaders/lsSGzy.jpg"); */
+   background-image: url("https://preview.redd.it/rick-and-morty-x-portal-wallpaper-i-made-v0-hsyo9tmox6ca1.png?auto=webp&s=5927ffebcfed140658189000331cf2f30abb9015");
+   background-position: center;
+   background-size: cover;
+   height: 100vh;
+}
+
+@media screen and (max-width: 600px) {
+   .App {
+      background-color: aquamarine;
+      background-size: cover;
+      
+   }
+   
+}
