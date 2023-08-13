@@ -79,7 +79,8 @@ display: flex;
     margin-right: 15px;
     border-radius: 30px;
     border: none;
-    width: 30%;
+    width: 20%;
+    background-color: #8ed372;
     
 
 }

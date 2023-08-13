@@ -18,10 +18,10 @@ const Nav = ({onSearch, access, setAccess}) => {
                 <Link to="/about" className={style.link}>About</Link>
             </button>
             <button className={style.botones}>
-                <Link to="/home">Home</Link>
+                <Link to="/home" className={style.link}>Home</Link>
             </button>
             <button className={style.botones}>
-                <Link to="/favorites">Favorites</Link>
+                <Link to="/favorites" className={style.link}>Favorites</Link>
             </button>
             <button className={style.botones} onClick={handleLogOut}>Log Out</button>
             <SearchBar onSearch={onSearch}/>

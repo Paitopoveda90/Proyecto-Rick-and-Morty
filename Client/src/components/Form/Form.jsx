@@ -30,19 +30,24 @@ const Form = ({login}) => {
 
     return (
         <div className={style.contenedor}>
-            <form onSubmit={handelSubmit}>
-                <label className={style.label} htmlFor="email" >Email:  </label>
-                <input className= {style.input} type="text"  name="email" value={userData.email} onChange={handleChange}/>
+            <form className={style.form} onSubmit={handelSubmit}>
+                <span className={style.inputspan}>
+                <label className={style.label} htmlFor="email" > Email:  </label>
+                <input type="email" name="email" value={userData.email} onChange={handleChange}/>
+                </span>
                 {errors.email && <p className= {style.error}>{errors.email}</p>}
-                <hr className= {style.hr} />
-                <label className={style.label} htmlFor="password">Password:  </label>
-                <input className= {style.input} type="password" name="password" value={userData.password} onChange={handleChange}/>
+                {/* <hr className= {style.hr} /> */}
+                <span className={style.inputspan}>
+                <label className={style.label} htmlFor="password"> Password:  </label>
+                <input type="password" name="password" value={userData.password} onChange={handleChange}/>
+                </span>
                 {errors.password && <p className= {style.error} >{errors.password}</p>}
-                <hr className={style.hr}/>
-                <button className={style.submit}>Submit</button>
+                {/* <hr className={style.hr}/> */}
+                {/* <button className={style.submit}>Submit</button> */}
+                <input className={style.submit} type="submit" value="Log in"></input>
 
             </form>
-        </div>
+         </div>
     )
 }
 

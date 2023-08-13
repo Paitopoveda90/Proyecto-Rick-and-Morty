@@ -1,4 +1,4 @@
-.contenedor {
+/* .contenedor {
     width: 35%;
     height: 70%;
     margin-left: 35%;
@@ -58,4 +58,103 @@
     background-color: #50d45080;
     font-size: 20px ;
 
+} */
+
+.contenedor {
+    background-color: #08460b3f;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(3px);
+    width: 600px;
+    height: 60%;
+    margin-left: 32%;
+    padding-top: 10%;
+    padding-left: 80px;
+    padding-right: 50px;
+    border-radius: 150px;
+
 }
+
+.error{
+    color: #afddaf;
+    margin-top: 1px;
+    font-weight: 700;
+    font-size: 18px;
+    
+}
+
+form {
+    --bg-light: #efefef;
+    --bg-dark: #707070;
+    --clr: #58BC82;
+    --clr-alpha: #9c9c9c60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+  }
+  
+  .form .inputspan {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+  
+  form input[type="email"],
+  form input[type="password"] {
+    border-radius: 0.5rem;
+    padding: 1rem 0.75rem;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--clr-alpha);
+    outline: 2px solid var(--bg-dark);
+    font-size: 20px;
+  }
+  
+  form input[type="email"]:focus,
+  form input[type="password"]:focus {
+    outline: 2px solid var(--clr);
+  }
+  
+  .label {
+    align-self: flex-start;
+    /* color: var(--clr); */
+    color: #7ae77a;
+    font-weight: 700;
+    font-size: 30px;
+    
+  }
+  
+  form .submit {
+    padding: 1rem 0.75rem;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    background-color: var(--bg-dark);
+    color: var(--bg-light);
+    border: none;
+    cursor: pointer;
+    transition: all 300ms;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  
+  form .submit:hover {
+    background-color: var(--clr);
+    color: var(--bg-dark);
+  }
+  
+  .span {
+    text-decoration: none;
+    color: var(--bg-dark);
+  }
+  
+  .span a {
+    color: var(--clr);
+  }

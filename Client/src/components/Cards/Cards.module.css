@@ -1,9 +1,11 @@
 .container {
     display:flex;
-    /* justify-content:center;  */
-    /* overflow: hidden; */
-    max-width: 100%;
+    flex-direction: row;
     flex-wrap: wrap;
+    align-content: center;
+    /* overflow: hidden; */
+    /* max-width: 100%; */
+    /* flex-wrap: wrap; */
        
         
 }
